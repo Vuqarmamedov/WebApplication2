@@ -1,0 +1,23 @@
+﻿
+@model List<WebApplication2.Models.Category>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>info</title>
+</head>
+<body>
+    @foreach (WebApplication2.Models.Category cat in Model )
+    {
+        @cat.ad
+        @cat.sayi
+        @cat.desc
+    }
+
+</body>
+</html>
